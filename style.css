@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@900&display=swap');
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+.wrap {
+  height: 100vh;
+  max-width: 60%;
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+  margin: auto;
+  flex-direction: column;
+  gap: 50px;
+}
+.title {
+  text-align: center;
+}
+.title h2 {
+  font-family: 'Raleway', calibri;
+  font-size: 50px;
+}
+.title p {
+  font-family: 'Montserrat', calibri;
+  font-size: 22px;
+  padding-top: 20px;
+}
+form input {
+  padding: 10px 25px;
+  width: 400px;
+  border-radius: 5px;
+  border: none;
+  border: 2px solid #0000e660;
+  outline: none;
+}
+input:focus {
+  outline-style: solid;
+  outline-width: 2px;
+  outline-color: dodgerblue;
+}
+form a {
+  background: #0000e6;
+  padding: 8px 25px;
+  color: white;
+  font-family: calibri;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 17px;
+}
+::placeholder {
+  font-family: 'Montserrat', calibri;
+  font-size: 18px;
+}
+.card {
+  padding: 20px 50px;
+  width: 100%;
+  height: 40vh;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.text {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.text .name {
+  font-family: 'Raleway', calibri;
+}
+.text .temp {
+  color: #0000e6;
+  font-family: 'Montserrat', calibri;
+  font-size: 50px;
+}
+.text .desc {
+  color: rgb(41, 40, 40);
+  font-family: 'Montserrat', calibri;
+  font-size: 22px;
+}
+.wind span {
+  font-family: 'Montserrat', calibri;
+  font-size: 20px;
+  color: rgb(41, 40, 40);
+}
+.img {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.card img {
+  flex: 1.5;
+  height: 230px;
+}
