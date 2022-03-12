@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 .wrap {
-  height: 100vh;
+  min-height: 100vh;
   max-width: 60%;
   display: flex;
   align-items: center;
@@ -29,7 +29,7 @@
 }
 form input {
   padding: 10px 25px;
-  width: 400px;
+  width: 90%;
   border-radius: 5px;
   border: none;
   border: 2px solid #0000e660;
@@ -56,8 +56,8 @@ form a {
 }
 .card {
   padding: 20px 50px;
-  width: 100%;
-  height: 40vh;
+  width: 650px;
+  min-height: 40vh;
   border-radius: 5px;
   display: flex;
   flex-direction: row;
@@ -96,4 +96,62 @@ form a {
 .card img {
   flex: 1.5;
   height: 230px;
+}
+@media all and (max-width: 972px) {
+  .title h2 {
+    font-size: 40px;
+  }
+  .text .name {
+    font-size: 25px;
+  }
+  .text .temp {
+    font-size: 30px;
+  }
+  .text .desc {
+    font-size: 16px;
+  }
+  .wind span {
+    font-size: 16px;
+  }
+}
+@media all and (max-width: 843px) {
+  .img {
+    display: none;
+  }
+  .card {
+    text-align: center;
+
+    width: 300px;
+  }
+  .title h2 {
+    font-size: 45px;
+  }
+  .text .name {
+    font-size: 30px;
+  }
+  .text .temp {
+    font-size: 35px;
+  }
+  .text .desc {
+    font-size: 20px;
+  }
+  .wind span {
+    font-size: 20px;
+  }
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+  }
+  form a {
+    width: 90%;
+    text-align: center;
+  }
+}
+@media all and (max-width: 430px) {
+  .title h2 {
+    font-size: 25px;
+  }
 }
