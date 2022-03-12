@@ -15,7 +15,7 @@ const show = function (city) {
     })
     .then(function (data) {
       cityName.textContent = data.list[0].name;
-      windSpeed.textContent = data.list[0].wind.speed + 'Miles / h';
+      windSpeed.textContent = data.list[0].wind.speed + ' Mil /h';
       desc.textContent = data.list[0].weather[0].description;
       temp.textContent = Math.trunc(data.list[0].main.temp - 273.15) + ' ° C';
     })
